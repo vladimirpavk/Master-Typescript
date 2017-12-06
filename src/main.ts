@@ -1,9 +1,26 @@
 'use strict'
 
-import { ProbaKlasa } from './app';
+import { ProbaKlasa, DerivedProba, StaticClass } from './app';
 
 let mojaKlasa=new ProbaKlasa();
 
+let derProba=new DerivedProba();
+
+console.log(derProba.getProbaText());
+
+
+
+let st1=new StaticClass();
+console.log(st1.getCounter());
+st1.incrementCounter();
+console.log(st1.getCounter());
+st1.incrementCounter(5);
+console.log(st1.getCounter());
+
+let st2=new StaticClass();
+console.log(st2.getCounter());
+st2.decrementCounter();
+console.log(st1.getCounter());
 
 /*function probaFunc(nekiObj: {
     ime?: string,
