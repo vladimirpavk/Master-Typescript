@@ -36,9 +36,9 @@ export class StaticClass{
     }
 }
 
-export class GenericClass<T>{
+/*export class GenericClass<T>{
     public param1: T;
     public add(x:T, y:T):T{
         return x+y;
     }
-}
+}*/

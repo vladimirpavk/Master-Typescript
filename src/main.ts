@@ -8,9 +8,16 @@ let derProba=new DerivedProba();
 
 console.log(derProba.getProbaText());
 
+let prom1=5;
+
+function addition(x:number, y:number):number{
+    return x+y+prom1;
+}
+
+console.log(addition(3,2));
 
 
-let st1=new StaticClass();
+/*let st1=new StaticClass();
 console.log(st1.getCounter());
 st1.incrementCounter();
 console.log(st1.getCounter());
@@ -20,7 +27,7 @@ console.log(st1.getCounter());
 let st2=new StaticClass();
 console.log(st2.getCounter());
 st2.decrementCounter();
-console.log(st1.getCounter());
+console.log(st1.getCounter());*/
 
 /*function probaFunc(nekiObj: {
     ime?: string,
