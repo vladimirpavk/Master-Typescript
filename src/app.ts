@@ -36,9 +36,26 @@ export class StaticClass{
     }
 }
 
-/*export class GenericClass<T>{
+export class GenericClass<T>{
     public param1: T;
-    public add(x:T, y:T):T{
-        return x+y;
-    }
+    //public addition: (x:T, y:T)=>T;
+    public addition: {(x:T, y:T):T};
+}
+
+let gcObj=new GenericClass<number>();
+gcObj.param1=5;
+gcObj.addition=function(x,y){
+    return x+y;
+}
+console.log("From generc class: "+gcObj.addition(gcObj.param1, 10));
+
+let x=[0,1,2];
+console.log("typeof : "+typeof(x));
+/*
+let genericAdditionFD: {<T>(x:T, y:T):T}=function<T>(x:T, y:T):T{
+    return x+y;
+}
+
+export function genericAddition<T>(x:T, y:T):T{
+    return x+y;
 }*/
