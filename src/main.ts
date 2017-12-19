@@ -1,10 +1,13 @@
 'use strict'
 
-import { ProbaKlasa, DerivedProba, StaticClass } from './app';
-
+//import { ProbaKlasa, DerivedProba, StaticClass } from './app';
+import * as mojModul from './app';
+/*
 let mojaKlasa=new ProbaKlasa();
-
 let derProba=new DerivedProba();
+*/
+let mojaKlasa=new mojModul.ProbaKlasa();
+let derProba=new mojModul.DerivedProba();
 
 console.log(derProba.getProbaText());
 
