@@ -42,6 +42,12 @@ export class GenericClass<T>{
     public addition: {(x:T, y:T):T};
 }
 
+export default class MyClass{
+    constructor(){
+        console.log("...MyClass constructor...");
+    }
+}
+
 let gcObj=new GenericClass<number>();
 gcObj.param1=5;
 gcObj.addition=function(x,y){

@@ -17,6 +17,9 @@ function addition(x:number, y:number):number{
     return x+y+prom1;
 }
 
+import majKlasa from "./app";
+let mK=new majKlasa();
+
 console.log(addition(3,2));
 
 
