@@ -1,3 +1,5 @@
+/// <reference path="./app.d.ts"/>
+
 'use strict'
 
 //import { ProbaKlasa, DerivedProba, StaticClass } from './app';
@@ -17,8 +19,9 @@ function addition(x:number, y:number):number{
     return x+y+prom1;
 }
 
-import majKlasa from "./app";
-let mK=new majKlasa();
+/*import majKlasa from "./app";
+let mK=new majKlasa();*/
+let mk=new mojModul.default();
 
 console.log(addition(3,2));
 
